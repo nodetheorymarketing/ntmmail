@@ -1,0 +1,62 @@
+/* style.css */
+
+/* Global resets & container */
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: Arial, sans-serif; line-height:1.5; color:#333; }
+.container { max-width: 960px; margin: 0 auto; padding: 1rem; }
+
+/* Nav */
+nav { background:#f1cf88; padding:0.5rem 0; }
+nav ul { list-style:none; display:flex; gap:1rem; justify-content:center; }
+nav a { text-decoration:none; color:#000; font-weight:bold; }
+nav a:hover { text-decoration:underline; }
+
+/* Header / Hero */
+header { background:#f9f1d3; padding:2rem 0; text-align:center; }
+header h1 { font-size:2.5rem; margin-bottom:0.5rem; }
+header p { margin-bottom:1rem; }
+
+/* Buttons */
+.btn-select {
+  background:#000; color:#fff; border:none;
+  padding:0.75rem 1.5rem; font-size:1rem;
+  cursor:pointer; border-radius:4px;
+}
+.btn-select:hover { opacity:0.9; }
+
+/* Features */
+.feature-inner { padding:2rem 0; text-align:center; }
+.feature-inner ul { list-style:none; }
+.feature-inner li {
+  margin:0.5rem 0; position:relative; padding-left:2rem;
+}
+.feature-inner li::before {
+  content:"✔️"; position:absolute; left:0; top:0;
+}
+
+/* Pricing */
+.pricing-section { padding:2rem 0; text-align:center; }
+.pricing-cards {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:1.5rem; margin-top:1rem;
+}
+.plan-card {
+  border:1px solid #ddd; border-radius:8px; padding:1rem;
+}
+.plan-card h2 { margin-bottom:0.5rem; }
+.plan-card .price { font-size:1.5rem; margin-bottom:1rem; }
+.plan-card ul { list-style:none; text-align:left; margin-bottom:1rem; }
+.plan-card li::before { content:"• "; color:#f1cf88; }
+
+/* Forms (contact & login) */
+form { display:flex; flex-direction:column; gap:1rem; max-width:400px; margin:1rem auto; }
+input, textarea {
+  padding:0.5rem; border:1px solid #ccc; border-radius:4px; width:100%;
+}
+textarea { resize:vertical; }
+
+/* Footer */
+footer { background:#f1f1f1; padding:1rem 0; text-align:center; font-size:0.9rem; }
+footer .legal-links { list-style:none; display:flex; gap:1rem; justify-content:center; margin-top:0.5rem; }
+footer a { color:#000; text-decoration:none; }
+footer a:hover { text-decoration:underline; }

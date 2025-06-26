@@ -1,43 +1,68 @@
-<!-- login.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login – NTM Mail</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Log in to your YourDomain Mail account to manage aliases, catch-all settings, and more.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Login – YourDomain Mail">
+  <meta property="og:description" content="Access your YourDomain Mail dashboard and settings.">
+  <meta property="og:image" content="https://www.yourdomain.com/images/og-image.png">
+  <meta property="og:url" content="https://www.yourdomain.com/login.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@YourTwitterHandle">
+  <meta name="twitter:title" content="Login – YourDomain Mail">
+  <meta name="twitter:description" content="Access your YourDomain Mail dashboard and settings.">
+  <meta name="twitter:image" content="https://www.yourdomain.com/images/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <title>Login – YourDomain Mail</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="login.html">Login</a></li>
-    </ul>
+    <div class="container nav-wrap">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.jpg" alt="NTM Mail logo" />
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="active">Login</a></li>
+      </ul>
+    </div>
   </nav>
 
   <main class="container">
-    <section class="login-container">
-      <h1>Account Login</h1>
+    <section class="login-section">
+      <h2>Account Login</h2>
       <form onsubmit="alert('Invalid credentials. Please try again.'); return false;">
-        <label>Email</label>
-        <input type="email" placeholder="you@yourdomain.com" required />
-        <label>Password</label>
-        <input type="password" placeholder="Your Password" required />
-        <button type="submit" class="btn-select">Log In</button>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="btn-select" type="submit">Log In</button>
       </form>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 NTM Mail</p>
       <ul class="legal-links">
         <li><a href="terms.html">Terms of Service</a></li>
         <li><a href="privacy.html">Privacy Policy</a></li>
       </ul>
+      <p>© 2025 YourDomain Mail</p>
     </div>
   </footer>
+
 </body>
 </html>

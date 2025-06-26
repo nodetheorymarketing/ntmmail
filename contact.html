@@ -1,45 +1,69 @@
-<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us – NTM Mail</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Get in touch with our support team for any questions about our email hosting service.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Us – YourDomain Mail">
+  <meta property="og:description" content="Reach out to our support team for help with your email hosting.">
+  <meta property="og:image" content="https://www.yourdomain.com/images/og-image.png">
+  <meta property="og:url" content="https://www.yourdomain.com/contact.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@YourTwitterHandle">
+  <meta name="twitter:title" content="Contact Us – YourDomain Mail">
+  <meta name="twitter:description" content="Reach out to our support team for help with your email hosting.">
+  <meta name="twitter:image" content="https://www.yourdomain.com/images/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <title>Contact Us – YourDomain Mail</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="login.html">Login</a></li>
-    </ul>
+    <div class="container nav-wrap">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.jpg" alt="NTM Mail logo" />
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
   </nav>
 
   <main class="container">
-    <section class="contact-container">
-      <h1>Contact Us</h1>
-      <form onsubmit="alert('Thanks, we\'ll be in touch!'); return false;">
-        <label>Name</label>
-        <input type="text" placeholder="Your Name" required />
-        <label>Email</label>
-        <input type="email" placeholder="you@yourdomain.com" required />
-        <label>Message</label>
-        <textarea placeholder="How can we help?" required></textarea>
-        <button type="submit" class="btn-select">Send Message</button>
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <form onsubmit="alert('Thanks! We’ll be in touch soon.'); return false;">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="How can we help?" required></textarea>
+        <button class="btn-select" type="submit">Send Message</button>
       </form>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 NTM Mail</p>
       <ul class="legal-links">
         <li><a href="terms.html">Terms of Service</a></li>
         <li><a href="privacy.html">Privacy Policy</a></li>
       </ul>
+      <p>© 2025 YourDomain Mail</p>
     </div>
   </footer>
+
 </body>
 </html>

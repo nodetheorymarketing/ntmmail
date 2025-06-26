@@ -1,69 +1,95 @@
-<!-- pricing.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pricing – NTM Mail</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Explore our email hosting plans—Lite, Standard, and Premium—tailored to your business needs. Unlimited aliases, catch-all forwarding, and more.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="YourDomain Mail Pricing">
+  <meta property="og:description" content="Compare our Lite, Standard, and Premium plans for secure, catch-all email hosting.">
+  <meta property="og:image" content="https://www.yourdomain.com/images/og-image.png">
+  <meta property="og:url" content="https://www.yourdomain.com/pricing.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@YourTwitterHandle">
+  <meta name="twitter:title" content="YourDomain Mail Pricing">
+  <meta name="twitter:description" content="Compare our Lite, Standard, and Premium plans for secure, catch-all email hosting.">
+  <meta name="twitter:image" content="https://www.yourdomain.com/images/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <title>Pricing – YourDomain Mail</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="login.html">Login</a></li>
-    </ul>
+    <div class="container nav-wrap">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.jpg" alt="NTM Mail logo" />
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pricing.html" class="active">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
   </nav>
 
   <main class="container">
     <section class="pricing-section">
-      <h1>Our Plans</h1>
+      <h2>Choose Your Plan</h2>
       <div class="pricing-cards">
         <div class="plan-card">
-          <h2>Lite</h2>
+          <h3>Lite</h3>
           <p class="price">$1<span>/mo</span></p>
           <ul>
             <li>Up to 50 aliases</li>
             <li>1 GB storage</li>
-            <li>Email support</li>
+            <li>Basic support</li>
           </ul>
-          <button onclick="alert('You selected Lite plan!')" class="btn-select">Select</button>
+          <button class="btn-select" onclick="alert('Thanks for choosing Lite! Our team will reach out.')">Select</button>
         </div>
         <div class="plan-card">
-          <h2>Standard</h2>
+          <h3>Standard</h3>
           <p class="price">$5<span>/mo</span></p>
           <ul>
             <li>Unlimited aliases</li>
             <li>10 GB storage</li>
             <li>Priority support</li>
           </ul>
-          <button onclick="alert('You selected Standard plan!')" class="btn-select">Select</button>
+          <button class="btn-select" onclick="alert('Thanks for choosing Standard!')">Select</button>
         </div>
-        <div class="plan-card">
-          <h2>Premium</h2>
+        <div class="plan-card premium">
+          <h3>Premium</h3>
           <p class="price">$15<span>/mo</span></p>
           <ul>
-            <li>Everything in Standard</li>
+            <li>Everything Standard</li>
             <li>25 GB storage</li>
             <li>Dedicated account manager</li>
           </ul>
-          <button onclick="alert('You selected Premium plan!')" class="btn-select">Select</button>
+          <button class="btn-select" onclick="alert('Thanks for choosing Premium!')">Select</button>
         </div>
       </div>
-      <p>All plans include 24/7 email support and future feature updates.</p>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 NTM Mail</p>
       <ul class="legal-links">
         <li><a href="terms.html">Terms of Service</a></li>
         <li><a href="privacy.html">Privacy Policy</a></li>
       </ul>
+      <p>© 2025 YourDomain Mail</p>
     </div>
   </footer>
+
 </body>
 </html>

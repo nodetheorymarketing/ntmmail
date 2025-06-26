@@ -1,10 +1,11 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>NTM Mail Facade</title>
-  <!-- your CSS files -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Business Email Service</title>
+  <!-- Your CSS files -->
   <link rel="stylesheet" href="zoho.css">
   <link rel="stylesheet" href="zoho1.css">
   <link rel="stylesheet" href="zoho2.css">
@@ -14,79 +15,69 @@
   <link rel="stylesheet" href="zoho6.css">
   <link rel="stylesheet" href="zoho7.css">
 </head>
-<body class="body-umain">
+<body>
+  <nav class="zw-nav">
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
 
-  <!-- product header -->
   <header class="zw-product-header">
     <div class="content-wrap">
       <h1>Premium Business Email Service</h1>
+      <p>Plans from <strong>$1/mo</strong></p>
     </div>
   </header>
 
-  <!-- top hero/banner -->
-  <section class="top-section">
-    <div class="content-wrap banner-box">
-      <div class="banner-con">
-        <h1>YourDomain Mail</h1>
-        <p>Unlimited aliases • Enterprise-grade IMAP/SMTP • No phone verification</p>
+  <section id="features" class="feature-inner">
+    <h2>Key Features</h2>
+    <ul>
+      <li>✔️ True catch-all forwarding</li>
+      <li>✔️ "+" Sub-addressing support</li>
+      <li>✔️ SPF, DKIM &amp; DMARC included</li>
+    </ul>
+    <button onclick="alert('Thanks! Our team will contact you shortly.')" class="btn-select">Get Started</button>
+  </section>
+
+  <section id="pricing" class="pricing-section">
+    <h2>Choose Your Plan</h2>
+    <div class="pricing-cards">
+      <div class="plan-card">
+        <h3>Lite</h3>
+        <p class="price">$1<span>/mo</span></p>
+        <ul>
+          <li>Up to 50 aliases</li>
+          <li>1 GB storage</li>
+          <li>Basic support</li>
+        </ul>
+        <button onclick="alert('You selected Lite plan!')" class="btn-select">Select</button>
       </div>
-      <div class="banner-signup-box">
-        <form class="cwf-container cwf-on-page">
-          <h2>Get Started</h2>
-          <input type="email" placeholder="you@yourdomain.com">
-          <button type="submit" class="cwf-button">Sign Up Now</button>
-        </form>
+      <div class="plan-card">
+        <h3>Standard</h3>
+        <p class="price">$5<span>/mo</span></p>
+        <ul>
+          <li>Unlimited aliases</li>
+          <li>10 GB storage</li>
+          <li>Priority support</li>
+        </ul>
+        <button onclick="alert('You selected Standard plan!')" class="btn-select">Select</button>
       </div>
     </div>
   </section>
 
-  <!-- features showcase -->
-  <section class="feature-inner">
-    <div class="feature-con">
-      <h2>Key Features</h2>
-      <ul>
-        <li>✔️ True catch-all forwarding</li>
-        <li>✔️ “+” Sub-addressing support</li>
-        <li>✔️ SPF, DKIM &amp; DMARC included</li>
-      </ul>
-    </div>
-    <div class="feature-media">
-      <!-- placeholder image -->
-      <img src="images/mail/feature.png" alt="Feature screenshot">
-    </div>
-  </section>
-
-  <!-- footer -->
   <footer class="zwf-new-footer">
     <div class="zwf-product-footer footer-sec-wrap">
       <div class="content-wrap">
-        <div class="footer-links-wrap product-links">
-          <div>
-            <h4>Company</h4>
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Support</h4>
-            <ul>
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">API Docs</a></li>
-            </ul>
-          </div>
-        </div>
+        <p>&copy; 2025 NTM Mail</p>
+        <ul class="legal-links">
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
       </div>
     </div>
-    <div class="zw-common-footer common-links">
-      <ul class="ZPprivacy">
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-      </ul>
-      <p class="zw-only-copyright">© 2025 YourDomain Mail</p>
-    </div>
   </footer>
-
 </body>
 </html>

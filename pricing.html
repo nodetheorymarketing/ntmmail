@@ -8,14 +8,14 @@
   <meta name="description" content="Compare our Lite, Standard, and Premium email plans. Unlimited aliases, storage options, and support tiers from $1/mo." />
   <meta property="og:title" content="Pricing – NTM Mail" />
   <meta property="og:description" content="Affordable email hosting plans with unlimited aliases, storage, and premium support." />
-  <meta property="og:image" content="https://www.ntmmail.com/images/og-image.png" />
-  <meta property="og:url" content="https://www.ntmmail.com/pricing.html" />
+  <meta property="og:image" content="https://www.NTMmail.com/images/og-image.png" />
+  <meta property="og:url" content="https://www.NTMmail.com/pricing.html" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@YourTwitterHandle" />
+  <meta name="twitter:site" content="@NTMmail" />
   <meta name="twitter:title" content="Pricing – NTM Mail" />
   <meta name="twitter:description" content="Affordable email hosting plans with unlimited aliases, storage, and premium support." />
-  <meta name="twitter:image" content="https://www.ntmmail.com/images/og-image.png" />
+  <meta name="twitter:image" content="https://www.NTMmail.com/images/og-image.png" />
 
   <!-- JSON-LD Organization & WebSite -->
   <script type="application/ld+json">
@@ -52,30 +52,90 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- 1. Skip-to-content -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- 2. Navigation -->
   <nav role="navigation">
-    …  
+    <div class="container nav-wrap">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="NTM Mail logo" />
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pricing.html" class="active">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
   </nav>
 
+  <!-- 3. Main content -->
   <main id="main-content" role="main" class="container">
     <section class="pricing-section">
       <h2>Choose Your Plan</h2>
+
       <div class="pricing-cards">
-        …  
+        <!-- Lite Plan -->
+        <div class="plan-card">
+          <h3>Lite</h3>
+          <p class="price">$1<span>/mo</span></p>
+          <ul>
+            <li>Up to 50 aliases</li>
+            <li>1 GB storage</li>
+            <li>Basic support</li>
+          </ul>
+          <button class="btn-select" onclick="alert('Thanks for choosing Lite!')">Select</button>
+        </div>
+
+        <!-- Standard Plan -->
+        <div class="plan-card">
+          <h3>Standard</h3>
+          <p class="price">$5<span>/mo</span></p>
+          <ul>
+            <li>Unlimited aliases</li>
+            <li>10 GB storage</li>
+            <li>Priority support</li>
+          </ul>
+          <button class="btn-select" onclick="alert('Thanks for choosing Standard!')">Select</button>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="plan-card premium">
+          <h3>Premium</h3>
+          <p class="price">$15<span>/mo</span></p>
+          <ul>
+            <li>Everything in Standard</li>
+            <li>25 GB storage</li>
+            <li>Dedicated account manager</li>
+          </ul>
+          <button class="btn-select" onclick="alert('Thanks for choosing Premium!')">Select</button>
+        </div>
       </div>
 
+      <!-- 4. Trust Badges -->
       <div class="trust-badges">
-        <img src="images/badge-ssl.png.jpg" alt="SSL Secured">
-        <img src="images/badge-uptime.jpg"  alt="99.9% uptime SLA">
-        <img src="images/badge-backup.jpg"  alt="Daily Backups">
+        <img src="images/badge-ssl.png.jpg"   alt="SSL Secured" />
+        <img src="images/badge-uptime.jpg"    alt="99.9% uptime SLA" />
+        <img src="images/badge-backup.jpg"    alt="Daily Backups" />
       </div>
+
+      <!-- 5. Money-Back Guarantee -->
       <p class="guarantee">30-day money-back guarantee on all plans.</p>
     </section>
   </main>
 
+  <!-- 6. Footer -->
   <footer role="contentinfo">
-    …  
+    <div class="container">
+      <ul class="legal-links">
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+      <p>© 2025 NTM Mail</p>
+    </div>
   </footer>
 </body>
 </html>
+
 

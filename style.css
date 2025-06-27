@@ -20,142 +20,152 @@
 body { font-family: Arial, sans-serif; line-height: 1.5; color: #333; }
 .container { max-width: 960px; margin: 0 auto; padding: 1rem; }
 
-/* …the rest of your existing CSS… */
-
-
-/* Section spacing for uniform vertical rhythm */
+/* Section spacing */
 section, main > section, footer {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
-/* Typography tweaks */
+/* Typography */
 h1 { font-size: 2.25rem; margin-bottom: 0.75rem; }
 h2 { font-size: 1.75rem; margin-bottom: 0.5rem; }
 p { margin-bottom: 1rem; }
 
-/* Nav wrapper */
+/* Nav styling */
 .nav-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: flex; align-items: center; justify-content: space-between;
 }
-/* Logo sizing */
-.nav-logo img {
-  height: auto;
-  width: auto;
-}
-
-/* Nav base */
+.nav-logo img { max-height: 40px; }
 nav {
-  background: #f1cf88;
+  background: #f1cf88; /* NTM Gold */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  position: sticky; top: 0; z-index: 1000;
 }
-nav ul { list-style: none; display: flex; gap: 1rem; justify-content: center; margin: 0; padding: 0; }
-nav a { text-decoration: none; color: #000; font-weight: bold; }
-nav a:hover { text-decoration: underline; }
-
-/* Link padding & hover */
-nav ul li a {
-  display: inline-block;
-  padding: 0.75rem 1rem;
-  border-radius: 4px;
+nav ul { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0; }
+nav a {
+  text-decoration: none; color: #000; font-weight: bold;
+  display: inline-block; padding: 0.75rem 1rem; border-radius: 4px;
   transition: background 0.2s;
 }
-nav ul li a:hover {
-  background: rgba(0,0,0,0.05);
-}
+nav a:hover { background: rgba(0,0,0,0.05); }
 
-/* Mobile stack */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    gap: 0;
-  }
-  nav ul li + li {
-    border-top: 1px solid #ddd;
-  }
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+              url('images/hero-bg.jpg') center/cover no-repeat;
+  padding: 4rem 0; color: #000; text-align: center;
 }
-
-/* Header / Hero base */
-.hero { background: #f9f1d3; padding: 2rem 0; text-align: center; }
-.hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-.hero p { margin-bottom: 1rem; }
+.hero h1 { font-size: 3rem; font-weight: bold; margin-bottom: 0.5rem; }
+.hero p { font-size: 1.25rem; max-width: 600px; margin: 0 auto 1.5rem; }
 
 /* Buttons */
 .btn-select {
   background: #000; color: #fff; border: none;
-  padding: 0.75rem 1.5rem; font-size: 1rem;
-  cursor: pointer; border-radius: 4px;
+  padding: 1rem 2rem; font-size: 1.1rem; cursor: pointer;
+  border-radius: 4px; transition: opacity 0.2s;
 }
 .btn-select:hover { opacity: 0.9; }
 
 /* Features */
-.feature-inner { padding: 2rem 0; text-align: center; }
-.feature-inner ul { list-style: none; }
+.feature-inner {
+  padding: 2rem 0; text-align: center;
+}
+.feature-inner ul {
+  list-style: none; padding: 0; margin: 0 auto; max-width: 400px;
+}
 .feature-inner li {
-  margin: 0.5rem 0; position: relative; padding-left: 2rem;
+  position: relative; padding-left: 2rem; margin: 0.5rem 0;
 }
 .feature-inner li::before {
   content: "✔️"; position: absolute; left: 0; top: 0;
 }
 
 /* Pricing */
-.pricing-section { padding: 2rem 0; text-align: center; }
+.pricing-section {
+  padding: 2rem 0; text-align: center;
+}
 .pricing-cards {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem; margin-top: 1rem;
 }
 .plan-card {
   border: 1px solid #ddd; border-radius: 8px; padding: 1rem;
 }
-.plan-card h2 { margin-bottom: 0.5rem; }
-.plan-card .price { font-size: 1.5rem; margin-bottom: 1rem; }
+.plan-card.premium { border-color: #f1cf88; }
+.plan-card .price {
+  font-size: 1.5rem; margin-bottom: 1rem;
+}
 .plan-card ul { list-style: none; text-align: left; margin-bottom: 1rem; }
-.plan-card li::before { content: "• "; color: #f1cf88; }
+.plan-card li::before {
+  content: "• "; color: #f1cf88; margin-right: 0.25rem;
+}
 
 /* Forms (contact & login) */
-form { display: flex; flex-direction: column; gap: 1rem; max-width: 400px; margin: 1rem auto; }
+form {
+  display: flex; flex-direction: column; gap: 1rem;
+  max-width: 400px; margin: 1rem auto;
+}
 input, textarea {
   padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; width: 100%;
 }
 textarea { resize: vertical; }
 
 /* Footer */
-footer { background: #f1f1f1; padding: 1rem 0; text-align: center; font-size: 0.9rem; }
-.legal-links { list-style: none; display: flex; gap: 1rem; justify-content: center; margin-top: 0.5rem; }
+footer {
+  background: #f1f1f1; padding: 1rem 0; text-align: center;
+  font-size: 0.9rem;
+}
+.legal-links {
+  list-style: none; display: flex; gap: 1rem;
+  justify-content: center; margin-top: 0.5rem;
+}
 footer a { color: #000; text-decoration: none; }
 footer a:hover { text-decoration: underline; }
 
-/* ----- Hero Enhancements ----- */
-.hero .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* —— NEW: Testimonials —— */
+.testimonials {
+  padding: 2rem 0;
+}
+.testimonials h2 {
+  text-align: center; margin-bottom: 1rem;
+}
+.test-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
   gap: 1rem;
 }
-
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
-              url('images/hero-bg.jpg') center/cover no-repeat;
-  padding: 4rem 0;
-  color: #000;
+.test-cards blockquote {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  font-style: italic;
+  border-radius: 4px;
+  background: #fafafa;
 }
-
-.hero h1 {
-  font-size: 3rem;
+.test-cards cite {
+  display: block;
+  margin-top: 0.5rem;
+  text-align: right;
+  font-style: normal;
   font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-.hero p {
-  font-size: 1.25rem;
-  max-width: 600px;
 }
 
-.btn-select {
-  font-size: 1.1rem;
-  padding: 1rem 2rem;
+/* —— NEW: Trust Badges —— */
+.trust-badges {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+.trust-badges img {
+  max-height: 60px;
+  width: auto;
+}
+
+/* —— NEW: Money-Back Guarantee —— */
+.guarantee {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #000;
 }

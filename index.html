@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,22 +16,23 @@
   <meta name="twitter:title" content="NTM Mail – Premium Business Email Service" />
   <meta name="twitter:description" content="Secure email hosting with unlimited aliases, catch-all, IMAP/SMTP. Plans from $1/mo." />
   <meta name="twitter:image" content="https://www.ntmmail.com/images/og-image.png" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <title>Premium Business Email Service</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Skip link -->
+  <!-- 1. Skip-link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
+  <!-- 2. Navigation -->
   <nav role="navigation">
     <div class="container nav-wrap">
       <a href="index.html" class="nav-logo">
         <img src="images/logo.png" alt="NTM Mail logo" />
       </a>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="login.html">Login</a></li>
@@ -40,24 +40,41 @@
     </div>
   </nav>
 
-  <header class="hero" id="main-content" role="main">
-    <div class="container">
+  <!-- 3. Main content -->
+  <main id="main-content" role="main">
+    <header class="hero container">
       <h1>YourDomain Mail</h1>
       <p>Unlimited aliases • Enterprise-grade IMAP/SMTP • No phone verification</p>
       <button class="btn-select" onclick="location.href='pricing.html'">View Plans</button>
-    </div>
-  </header>
+    </header>
 
-  <section id="features" class="feature-inner container">
-    <h2>Key Features</h2>
-    <ul>
-      <li>Unlimited catch-all aliases</li>
-      <li>"+" Sub-addressing (you+tag@yourdomain.com)</li>
-      <li>Enterprise-grade IMAP/SMTP access</li>
-      <li>SPF, DKIM &amp; DMARC support</li>
-    </ul>
-  </section>
+    <section id="features" class="feature-inner container">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Unlimited catch-all aliases</li>
+        <li>"+" Sub-addressing (you+tag@yourdomain.com)</li>
+        <li>Enterprise-grade IMAP/SMTP access</li>
+        <li>SPF, DKIM &amp; DMARC support</li>
+      </ul>
+    </section>
 
+    <!-- New Testimonials Section -->
+    <section class="testimonials container" aria-label="Customer testimonials">
+      <h2>Trusted by Businesses Worldwide</h2>
+      <div class="test-cards">
+        <blockquote>
+          “NTM Mail has transformed our workflow—catch-all aliases are a game-changer.”
+          <cite>- Jane Doe, Acme Corp.</cite>
+        </blockquote>
+        <blockquote>
+          “Reliable, secure, and the support team is lightning-fast.”
+          <cite>- John Smith, Beta LLC</cite>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <!-- 4. Footer -->
   <footer role="contentinfo">
     <div class="container">
       <ul class="legal-links">

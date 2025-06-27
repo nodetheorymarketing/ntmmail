@@ -21,15 +21,17 @@
   <meta name="twitter:description" content="Access your YourDomain Mail dashboard and settings.">
   <meta name="twitter:image" content="https://www.yourdomain.com/images/og-image.png">
 
-  <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-
   <title>Login – YourDomain Mail</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav>
+  <!-- 1. Skip-link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- 2. Nav with role -->
+  <nav role="navigation">
     <div class="container nav-wrap">
       <a href="index.html" class="nav-logo">
         <img src="images/logo.png" alt="NTM Mail logo" />
@@ -43,18 +45,24 @@
     </div>
   </nav>
 
-  <main class="container">
+  <!-- 3. Main landmark -->
+  <main id="main-content" role="main" class="container">
     <section class="login-section">
       <h2>Account Login</h2>
       <form onsubmit="alert('Invalid credentials. Please try again.'); return false;">
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
+        <label for="login-email">Email</label>
+        <input id="login-email" type="email" placeholder="Email" required>
+
+        <label for="login-password">Password</label>
+        <input id="login-password" type="password" placeholder="Password" required>
+
         <button class="btn-select" type="submit">Log In</button>
       </form>
     </section>
   </main>
 
-  <footer>
+  <!-- 4. Footer with role -->
+  <footer role="contentinfo">
     <div class="container">
       <ul class="legal-links">
         <li><a href="terms.html">Terms of Service</a></li>

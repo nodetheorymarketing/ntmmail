@@ -1,35 +1,32 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO Meta -->
-  <meta name="description" content="Secure, catch-all business email hosting with unlimited aliases, enterprise-grade IMAP/SMTP, and no phone verification. Plans start at $1/month.">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="YourDomain Mail – Premium Business Email Hosting">
-  <meta property="og:description" content="Secure, catch-all business email hosting with unlimited aliases and enterprise-grade features.">
-  <meta property="og:image" content="https://www.yourdomain.com/images/og-image.png">
-  <meta property="og:url" content="https://www.yourdomain.com">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@YourTwitterHandle">
-  <meta name="twitter:title" content="YourDomain Mail – Premium Business Email Hosting">
-  <meta name="twitter:description" content="Secure, catch-all business email hosting with unlimited aliases and enterprise-grade features.">
-  <meta name="twitter:image" content="https://www.yourdomain.com/images/og-image.png">
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- SEO & Social -->
+  <meta name="description" content="Secure, catch-all business email hosting with unlimited aliases and catch-all routing. Plans from $1/mo." />
+  <meta property="og:title" content="NTM Mail – Premium Business Email Service" />
+  <meta property="og:description" content="Secure email hosting with unlimited aliases, catch-all, IMAP/SMTP. Plans from $1/mo." />
+  <meta property="og:image" content="https://www.ntmmail.com/images/og-image.png" />
+  <meta property="og:url" content="https://www.ntmmail.com/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@YourTwitterHandle" />
+  <meta name="twitter:title" content="NTM Mail – Premium Business Email Service" />
+  <meta name="twitter:description" content="Secure email hosting with unlimited aliases, catch-all, IMAP/SMTP. Plans from $1/mo." />
+  <meta name="twitter:image" content="https://www.ntmmail.com/images/og-image.png" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
   <title>Premium Business Email Service</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="body-umain">
+<body>
+  <!-- Skip link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <nav>
+  <nav role="navigation">
     <div class="container nav-wrap">
       <a href="index.html" class="nav-logo">
         <img src="images/logo.png" alt="NTM Mail logo" />
@@ -43,32 +40,32 @@
     </div>
   </nav>
 
-  <header class="hero">
+  <header class="hero" id="main-content" role="main">
     <div class="container">
       <h1>YourDomain Mail</h1>
       <p>Unlimited aliases • Enterprise-grade IMAP/SMTP • No phone verification</p>
-      <button class="btn-select" onclick="window.location.href='pricing.html'">View Plans</button>
+      <button class="btn-select" onclick="location.href='pricing.html'">View Plans</button>
     </div>
   </header>
 
   <section id="features" class="feature-inner container">
     <h2>Key Features</h2>
     <ul>
-      <li>True catch-all forwarding</li>
-      <li>“+” Sub-addressing support</li>
-      <li>SPF, DKIM &amp; DMARC included</li>
+      <li>Unlimited catch-all aliases</li>
+      <li>"+" Sub-addressing (you+tag@yourdomain.com)</li>
+      <li>Enterprise-grade IMAP/SMTP access</li>
+      <li>SPF, DKIM &amp; DMARC support</li>
     </ul>
   </section>
 
-  <footer>
+  <footer role="contentinfo">
     <div class="container">
       <ul class="legal-links">
         <li><a href="terms.html">Terms of Service</a></li>
         <li><a href="privacy.html">Privacy Policy</a></li>
       </ul>
-      <p>© 2025 YourDomain Mail</p>
+      <p>© 2025 NTM Mail</p>
     </div>
   </footer>
-
 </body>
 </html>

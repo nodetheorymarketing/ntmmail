@@ -21,15 +21,17 @@
   <meta name="twitter:description" content="Our Terms of Service govern your use of the YourDomain Mail platform.">
   <meta name="twitter:image" content="https://www.yourdomain.com/images/og-image.png">
 
-  <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-
   <title>Terms of Service – YourDomain Mail</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav>
+  <!-- 1. Skip-link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- 2. Nav with role -->
+  <nav role="navigation">
     <div class="container nav-wrap">
       <a href="index.html" class="nav-logo">
         <img src="images/logo.png" alt="NTM Mail logo" />
@@ -43,13 +45,15 @@
     </div>
   </nav>
 
-  <main class="container terms-content">
+  <!-- 3. Main landmark -->
+  <main id="main-content" role="main" class="container terms-content">
     <h2>Terms of Service</h2>
     <p>Welcome to YourDomain Mail. By accessing or using our service, you agree to be bound by these Terms of Service...</p>
-    <!-- (Expand with your full ToS copy here) -->
+    <!-- (Your full ToS here) -->
   </main>
 
-  <footer>
+  <!-- 4. Footer with role -->
+  <footer role="contentinfo">
     <div class="container">
       <ul class="legal-links">
         <li><a href="terms.html">Terms of Service</a></li>

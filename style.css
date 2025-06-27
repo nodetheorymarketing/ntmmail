@@ -24,7 +24,7 @@ p { margin-bottom: 1rem; }
 }
 /* Logo sizing */
 .nav-logo img {
-  height: 40px;
+  height: auto;
   width: auto;
 }
 
